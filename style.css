@@ -33,11 +33,12 @@ nav a {
     font-size: 1.2rem;
     color: rgb(46, 46, 46);
     transition: all 0.3s ease;
+    outline: none;
 }
 nav a:hover{
     color: blueviolet;
 }
-nav a:nth-child(4):hover{
+nav a:nth-child(5):hover{
     color: white;
     opacity: 0.9;
 }
@@ -190,7 +191,7 @@ main img {
     padding: 20px;
     width: 350px;
     border-radius: 10px;
-    box-shadow: 1px 1px 8px inset black;
+    box-shadow: 1px 1px 7px inset black, -1px -1px 7px inset black;
 }
 
 .b-card .b-head {
@@ -296,10 +297,10 @@ main img {
 }
 
 .form-cont form input {
-    /* margin: 0px; */
-    width: 380px;
+    width: 400px;
     height: 40px;
     border: none;
+    font-size: 1.1rem;
     outline: none;
     border-bottom: 3px solid blueviolet;
     background: transparent;
@@ -310,8 +311,101 @@ main img {
     color: white;
     border-radius: 25px;
     font-size: 1.2rem;  
-    height: 40px;
-    width: 130px;
+    height: 45px;
+    width: 140px;
     cursor: pointer;
     margin-top: 10px;
+    border: none;
+}
+.search-cont{
+    height: 80px;
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-cont span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    font-size: 1.5rem;
+}
+.search-cont span i{
+    margin: 0 8px;
+    cursor: pointer;
+}
+.search-cont span:nth-child(1){
+    position: absolute;
+    left: 30px;
+}
+.search-cont span input{
+    height: 45px;
+    width: 350px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+}
+.filter-box{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 300px;
+    display: none;
+}
+.filter-box:hover{
+    display: block;
+}
+.search-cont:nth-child(1):hover+.filter-box{
+    display: block;
+}
+.main-search{
+    padding: 200px 70px;
+    width: 100%;
+    min-height: 110vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main-search .s-card{
+    background-color: #eee;
+    width: 620px;
+    height: 300px;
+    border-radius: 12px;
+    padding: 10px 25px;
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s ;
+    outline: 2px solid darkslategray;
+    outline-offset: -10px;
+}
+.main-search .s-card:hover{
+    outline-offset: 0px;
+}
+.main-search .s-card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.main-search .s-card .s-content{
+    width: 400px;
+}
+.main-search .s-card .s-head{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid grey;
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+.main-search .s-card .s-text{
+    font-size: 1.1rem;
+    color: grey;
+    text-align: left;
 }
