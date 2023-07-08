@@ -331,6 +331,7 @@ nav .navbar .join-link {
 
 .form-cont {
     padding-top: 120px;
+    min-height: 120vh;
 }
 
 .form-cont .sub-cont {
@@ -391,6 +392,7 @@ nav .navbar .join-link {
     cursor: pointer;
     margin: 10px 0;
     border: none;
+    margin-bottom: 20px;
 }
 
 .search-cont {
@@ -544,6 +546,16 @@ nav .navbar .join-link {
     .b-cont{
         grid-template-columns: repeat(2,1fr);
     }
+    .form-cont .sub-cont{
+        width: 710px;
+    }
+    .form-cont .side-part img {
+        height: 313px;
+        width: 277px;
+    }    
+    .form-cont form input {
+        width: 320px;
+    }
 }
 @media screen and (max-width:730px) {
     html{
@@ -569,6 +581,20 @@ nav .navbar .join-link {
     .foot-head{
         font-size: 1.8rem;
     }
+    .form-cont .sub-cont{
+        width: 330px;
+        height: 530px;
+    }
+    .form-cont .sub-cont .side-part{
+        display: none;
+    }
+    .form-cont form input {
+        width: 300px;
+    }
+    .form-cont form{
+        padding: 10px 0;
+    }
+    
 }
 @media screen and (max-width:500px) {
     main img{
