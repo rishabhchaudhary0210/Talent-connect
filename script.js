@@ -3,6 +3,7 @@ let fCard = document.querySelectorAll('.f-card');
 let burger = document.querySelector(".burger");
 let nav = document.querySelector("nav");
 let navLinks = document.querySelectorAll("nav>.navbar>a");
+let searchCont = document.querySelector(".search-cont");
 
 let j = 0;
 
@@ -26,3 +27,9 @@ navLinks.forEach(element => {
         nav.classList.toggle("active");
     })
 });
+
+// console.log(searchCont)
+// window.addEventListener(load,()=>{
+//     searchCont.style.display = 'flex';
+//     searchCont.style.position.top='90px';
+// })
