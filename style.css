@@ -101,11 +101,11 @@ nav .navbar a:nth-child(6):hover {
     top: 5px;
     color: blueviolet;
     left: 25px;
-    background-color: #fff;
     padding: 5px;
     border-radius: 15px;
 }
 .logo-head span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color:black;
 }
 main {
@@ -189,8 +189,10 @@ main img {
     margin: 40px 0;
 }
 
+.card-cont::-webkit-scrollbar{
+    display: none;
+}
 .card-cont {
-    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -232,7 +234,8 @@ main img {
 }
 
 .f-card:hover {
-    min-height: 100%;
+    transition: all 0.7s ease;
+    height: 100%;
 }
 
 .f-card.active {
